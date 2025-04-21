@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Watch list</title>
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadMovies()">
+    <h1>My Movie List</h1>
+    <h2>Here you can save for later all of your favorite shows!</h2>
+
+    <form onsubmit="addMovie()" method="dialog">
+    <label for="movieTitle">Movie Title:</label>
+    <input type="text" id="movieTitle">
+
+    <label for="directorName">Director:</label>
+    <input type="text" id="directorName">
+
+    <label for="description">Description:</label>
+    <input type="text" id="description">
+
+    <button>Add to list</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Movie Title</th>
+                <th>Director</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody id="containerTbody">
+
+        </tbody>
+    </table>
+
+
+</body>
+
+</html>
