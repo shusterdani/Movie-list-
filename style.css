@@ -1,0 +1,10 @@
+
+.edit-btn {
+    display: none;
+}
+
+.parentRow:hover
+.edit-btn {
+    display:block;
+}
+
